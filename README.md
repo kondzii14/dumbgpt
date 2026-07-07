@@ -1,5 +1,7 @@
 # DumbGPT 🧠🔥💧
 
+> DumbGPT is Dumbest AI in the world (i think, write in issues if im wrong)
+
 The world's dumbest **real, actually-trained** AI model.
 
 No neural network. No GPU. No attention mechanism. Just a
@@ -9,6 +11,19 @@ but mean absolutely nothing.
 
 Feed it `water`, `lava`, `eating`, `explosion` and it dreams up
 things like `watava`, `lashquake`, `eruptream`.
+
+## Example conversation
+
+```
+You: hello
+DumbGPT: Sion ead panter eng!
+
+You: what is the meaning of life?
+DumbGPT: Sal twingirea dang en vallusher squantaildestro scrain...
+```
+
+It never understands a single word you say. That's the point.
+
 
 ## How it works
 
@@ -25,7 +40,12 @@ things like `watava`, `lashquake`, `eruptream`.
 ```bash
 python train.py       # trains the model, saves dumbgpt_model.json, prints samples
 python generate.py    # generates more hallucinations from the saved model
+python chat.py         # chat with it! it will respond in pure hallucination
 ```
+
+`chat.py` is a real conversational loop — you type, it "replies" — it just
+never understands a single word you say. Try `python chat.py --order 1`
+for maximum chaos, or `--order 3` for slightly-too-coherent replies.
 
 ## Tuning the dumbness
 
@@ -48,4 +68,4 @@ re-run `train.py` — more data, still zero comprehension.
 
 ## License
 
-MIT. Do whatever you want with it — it's letter soup.
+GPL-3.0. Do whatever you want with it — it's letter soup. Just keep it open source.
