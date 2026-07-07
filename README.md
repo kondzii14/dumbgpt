@@ -61,10 +61,15 @@ re-run `train.py` — more data, still zero comprehension.
 
 ## Benchmarks
 
-| Model      | Params | Training time | Understands anything |
-|------------|--------|----------------|------------------------|
-| GPT-4      | ~1.7T  | months         | debatable              |
-| DumbGPT    | 0      | milliseconds   | no                     |
+| Model      | Params  | Training time | Understands anything |
+|------------|---------|----------------|------------------------|
+| GPT-4      | ~1.7T   | months         | debatable              |
+| DumbGPT    | ~1,115  | milliseconds   | no                     |
+
+*(Yes, DumbGPT technically has parameters — every entry in its
+letter-frequency table counts as one. It's about 150 billion times
+smaller than GPT-4. Run `python train.py` and count `dumbgpt_model.json`
+entries yourself if you don't believe it.)*
 
 ## License
 
